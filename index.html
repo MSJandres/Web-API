@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog - New Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body class="light-mode">
+    <header>
+        
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-sun"></i>
+    </header>
+    <main>
+        <div class="header-content"></div>
+            <div class="logo circle">
+                <h1>My First Blog</h1>
+            </div>
+        <div class="header-content">
+        <form id="blog-form">
+            <h2>What's on your mind?</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Blog Content:</label>
+            <textarea id="content" name="content" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://your-portfolio-url.com" target="_blank">Developer's Portfolio</a>
+    </footer>
+    <script src="assets/js/logic.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
+
+
