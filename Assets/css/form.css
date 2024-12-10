@@ -1,0 +1,171 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+aside {
+    background: linear-gradient(
+      var(--light-accent), 
+      var(--circle-color), 
+      var(--dark-accent)
+    );
+    clip-path: circle(20rem at center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  aside, 
+  section {
+    flex: 1 1 50%;
+  }
+  
+  aside > h2 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 1px var(--dark-accent);
+  }
+  
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+  }
+  
+  form > *:not(label) {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  input[type=submit] {
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  input[type=submit]:active {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+    background-color: var(--dark-accent);
+  }
+  
+  input[type=submit]:hover {
+    border-style: inset;
+    background-color: var(--dark-accent-action);
+  }
+  
+  input,
+  textarea {
+    border-radius: 4px;
+    border-width: 1px;
+    font-size: 1rem;
+    background-color: var(--light-accent);
+  }
+  
+  section {
+    padding: 2rem;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-left: double 1rem;
+  }
+  
+
+  .dark section {
+    border-left: solid .5rem var(--disabled);
+  }
+  
+  #error {
+    color: var(--error);
+    opacity: .75;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-circle h1 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.light-mode #theme-toggle {
+    color: #ffd700; /* Yellow color for the sun icon */
+}
+
+.dark-mode #theme-toggle {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+/* ... (keep the rest of the styles as they were) ... */
+
+.dark-mode .logo-circle {
+    background-color: #555;
+}
